@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First WebPage</title>
+
+        <style>
+            @media(min-width:400px)
+            {
+                body{
+                    background-color: red;
+                }
+            }
+            @media(max-width:500px)
+            {
+                body{
+                    background-color: rgb(25, 0, 255);
+                }
+            }
+            p{
+                background-color:antiquewhite;
+                font-size: large;
+                font-weight: bold;
+                
+            }
+            table,th,td,tr{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 20px;
+            }
+            *{
+                font-size: large;
+                /* to select all the content of the webpage */
+            }
+
+            ol li{
+                color: brown;
+            }
+
+            /* a[href="https://www.google.com"]{
+                color: rgb(7, 80, 4);
+
+            }
+
+            a[href="https://www.facebook.com"]{
+                color: rgb(64, 25, 218);
+
+            } 
+            
+            a[href="https://www.youtube.com"]{
+                color: rgba(158, 12, 22, 0.983);
+
+            }  */
+
+            #google-btn{
+                color: green;
+                background-color:antiquewhite;
+            }
+
+            #youtube-btn{
+                color: rgb(199, 3, 13);
+                background-color:antiquewhite;
+            }
+
+            #facebook-btn{
+                color: rgb(63, 9, 177);
+                background-color:antiquewhite;
+            }
+
+            a:hover{
+                font-size: larger;
+            }
+
+            button{
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                cursor: pointer;
+                transition: opacity 0.15sc;
+            }
+            
+
+            button:hover{
+                opacity: 0.4;
+            }
+
+            #google-btn:hover{
+                color: brown;
+
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+        <h1>Welcome to my Page</h1>
+        <h2>Welcome to my Page</h2>
+        <h3>Welcome to my Page</h3>
+        <h4>Welcome to my Page</h4>
+        <h5>Welcome to my Page</h5>
+        <h6>Welcome to my Page</h6>
+
+        
+        <img src="goal.png" width="200px">
+        <p>This is a paragraph</p>
+
+        unordered list
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li></a>
+        </ul>
+
+        <!-- <ul>
+            
+            <a href="https://www.google.com"> <li>Google</li></a>
+            <a href="https://www.facebook.com"> <li>Faebook</li></a>
+            <a href="https://www.youtube.com"> <li>Youtube</li></a>
+        </ul> -->
+
+        <button id="google-btn">Google</button>
+        <button id="facebook-btn">FaceBook</button>
+        <button id="youtube-btn">Youtube</button>
+        
+        <br>
+        Ordered List
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <form method="post" autocomplete="on">
+            <fieldset>
+                <legend>Your Info</legend>
+
+                <label for="fname">First Name:</label> 
+                <input type="text" placeholder="Enter your first name"><br>
+
+                <label for="lname">Last Name : </label> 
+                <input type="text" placeholder="Enter your Last name"><br>
+
+                <label for="password">Password:</label> 
+                <input type="password"><br>
+
+                <label for="dob">DOB:</label> 
+                <input type="date"><br>
+
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <br>
+
+                <label>Chose Courses</label>
+                <input type="checkbox" value="web programing" name="course">Web Programing
+                <input type="checkbox" value="db" name="course">DB
+                <input type="checkbox" value="pf" name="course">PF
+            </fieldset>
+
+            <label for="country">Country</label>
+            <input name="country" list="countries">
+            <datalist id="countries">
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>Afghanistan</option>
+
+            </datalist>
+            <br>
+
+            Chose your selection
+            <select>
+                <option>CY</option>
+                <option>CS</option>
+                <option>SE</option>
+                <option>AI</option>
+
+
+            </select>
+            <br>
+
+            <textarea rows="7" cols="15" placeholder="write some lines about yourself"></textarea>
+            <button>Submit</button>
+            <input type="reset" name="reset" value="reset">
+
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Roll</th>
+                    <th>Marks</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>abdullah</td>
+                    <td>1671</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>azan</td>
+                    <td>1741</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>abdul moiz</td>
+                    <td>1704</td>
+                    <td>100</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </body>
+
+    
+
+
+</html>

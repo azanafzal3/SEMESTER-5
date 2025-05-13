@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First WebPage</title>
+
+        <style>
+            p{
+                background-color:antiquewhite;
+                font-size: large;
+                font-weight: bold;
+                
+            }
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            *{
+                font-size: large;
+                /* to select all the contennt of the webpage */
+            }
+
+            ol li{
+                color: brown;
+            }
+
+        </style>
+    
+    </head>
+
+    <body style="background-color: aquamarine;">
+        <h1>Welcome to my Page</h1>
+        <h2>Welcome to my Page</h2>
+        <h3>Welcome to my Page</h3>
+        <h4>Welcome to my Page</h4>
+        <h5>Welcome to my Page</h5>
+        <h6>Welcome to my Page</h6>
+
+        <a href="https://www.google.com" target="_blank">Contact Us</a>
+        <img src="goal.png" width="200px">
+        <p>This is a paragraph</p>
+
+        unordered list
+        <ul>
+            <a href="#">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li></a>
+        </ul>
+
+        Ordered List
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <form method="post" autocomplete="on">
+            <fieldset>
+                <legend>Your Info</legend>
+
+                <label for="fname">First Name:</label> 
+                <input type="text" placeholder="Enter your first name"><br>
+
+                <label for="lname">Last Name : </label> 
+                <input type="text" placeholder="Enter your Last name"><br>
+
+                <label for="password">Password:</label> 
+                <input type="password"><br>
+
+                <label for="dob">DOB:</label> 
+                <input type="date"><br>
+
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <br>
+
+                <label>Chose Courses</label>
+                <input type="checkbox" value="web programing" name="course">Web Programing
+                <input type="checkbox" value="db" name="course">DB
+                <input type="checkbox" value="pf" name="course">PF
+            </fieldset>
+
+            <label for="country">Country</label>
+            <input name="country" list="countries">
+            <datalist id="countries">
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>Afghanistan</option>
+				<option>Iraq</option>
+
+            </datalist>
+            <br>
+
+            Chose your selection
+            <select>
+                <option>CY</option>
+                <option>CS</option>
+                <option>SE</option>
+                <option>EE</option>
+
+
+            </select>
+            <br>
+
+            <textarea rows="7" cols="15" placeholder="write some lines about yourself"></textarea>
+            <button>Submit</button>
+            <input type="reset" name="reset" value="reset">
+
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Roll</th>
+                    <th>Marks</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Azan</td>
+                    <td>1741</td>
+                    <td>100</td>
+                </tr>
+
+                <tr>
+                    <td>Khaqan</td>
+                    <td>1681</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>Moiz</td>
+                    <td>1704</td>
+                    <td>80</td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </body>
+
+    
+
+
+</html>
