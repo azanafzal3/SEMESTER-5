@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST University - Contact Us</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; background-image: url('background-image.jpg'); background-size: cover; background-attachment: center;">
+    <header style="background-color: #003366; color: white; text-align: center; padding: 15px;">
+        <img src="logo.png" alt="FAST University Logo" width="1000" height="200">
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav style="text-align: center; margin: 10px 0;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Home</a>
+        <a href="academics.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Academics</a>
+        <a href="admission.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Admission</a>
+        <a href="gallery.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Gallery</a>
+        <a href="about.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">About Us</a>
+        <a href="contact.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Contact Us</a>
+    </nav>
+
+   <div style="padding: 20px;">
+    <form action="submit_contact.html" method="post" style="display: flex; flex-direction: column;">
+        <label for="name" style="margin-bottom: 15px;">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required style="margin-bottom: 15px; width: 200px;">
+
+        <label for="email" style="margin-bottom: 15px;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required style="margin-bottom: 15px; width: 200px;">
+
+        <label for="message" style="margin-bottom: 15px;">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message" required style="margin-bottom: 15px;"></textarea>
+
+        <input type="submit" value="Submit" style="padding: 10px; background-color: #003366; color: white; border: none; cursor: pointer;">
+    </form>
+</div>
+
+    <footer style="background-color: #003366; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2024 FAST University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

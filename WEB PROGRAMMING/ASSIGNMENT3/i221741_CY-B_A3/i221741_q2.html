@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script src="convert.js" defer></script>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+	<h2>My first converter. Insert a number in usd, gbp, eur, cad or aud currency fields, and this taken as its value will be repectively converted to the values of the other four currencies.</h2>
+    <form>
+        <label for="usd">USD:</label>
+        <input type="number" id="usd" oninput="convert('usd')">
+        <br>
+        <label for="gbp">GBP:</label>
+        <input type="number" id="gbp" oninput="convert('gbp')">
+        <br>
+        <label for="cad">CAD:</label>
+        <input type="number" id="cad" oninput="convert('cad')">
+        <br>
+        <label for="eur">EUR:</label>
+        <input type="number" id="eur" oninput="convert('eur')">
+        <br>
+        <label for="aud">AUD:</label>
+        <input type="number" id="aud" oninput="convert('aud')">
+    </form>
+</body>
+</html>

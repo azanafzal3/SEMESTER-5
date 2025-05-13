@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Sound</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .letters {
+            display: flex;
+            gap: 20px; 
+        }
+
+        .letter {
+            font-size: 4rem;
+            font-weight: bold;
+            color: yellow; 
+            background-color: blue;
+            border: none;
+            cursor: pointer;
+        }
+    </style> 
+</head>
+<body>
+    <div class="letters">
+        <button class="letter" onclick="playSound('a.wav')">A</button>
+        <button class="letter" onclick="playSound('s.wav')">S</button>
+        <button class="letter" onclick="playSound('d.wav')">D</button>
+        <button class="letter" onclick="playSound('f.wav')">F</button>
+        <button class="letter" onclick="playSound('g.wav')">G</button>
+        <button class="letter" onclick="playSound('h.wav')">H</button>
+        <button class="letter" onclick="playSound('j.wav')">J</button>
+        <button class="letter" onclick="playSound('k.wav')">K</button>
+        <button class="letter" onclick="playSound('l.wav')">L</button>
+        </div>
+        <script>
+            function playSound(fileName) {
+                const audio = new Audio(fileName);
+                audio.play();
+            }
+
+            document.addEventListener('keydown', function(event) {
+                const keyToFileMap = {
+                    'a': 'a.wav',
+                    's': 's.wav',
+                    'd': 'd.wav',
+                    'f': 'f.wav',
+                    'g': 'g.wav',
+                    'h': 'h.wav',
+                    'j': 'j.wav',
+                    'k': 'k.wav',
+                    'l': 'l.wav'
+                };
+
+                const fileName = keyToFileMap[event.key.toLowerCase()];
+                if (fileName) {
+                    playSound(fileName);
+                }
+            });
+        </script>
+
+    </div>
+</body>
+</html>

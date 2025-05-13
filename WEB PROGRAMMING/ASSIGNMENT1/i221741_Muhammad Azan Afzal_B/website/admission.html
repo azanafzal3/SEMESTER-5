@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST University - Admission</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; background-image: url('background-image.jpg'); background-size: cover; background-attachment: fixed;">
+    <header style="background-color: #003366; color: white; text-align: center; padding: 15px;">
+        <img src="logo.png" alt="FAST University Logo" width="1000" height="200">
+        <h1>Admission Form</h1>
+    </header>
+
+    <nav style="text-align: center; margin: 10px 0;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Home</a>
+        <a href="academics.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Academics</a>
+        <a href="admission.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Admission</a>
+        <a href="gallery.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Gallery</a>
+        <a href="about.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">About Us</a>
+        <a href="contact.html" style="margin: 0 15px; text-decoration: none; color: black; font-weight: bold;">Contact Us</a>
+    </nav>
+
+    <div class="container" style="padding: 20px;">
+        <form action="404.html" method="post" style="display: flex; flex-direction: column;">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required style="margin-bottom: 15px;">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="margin-bottom: 15px;">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required style="margin-bottom: 15px;">
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required style="margin-bottom: 15px;">
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required style="margin-bottom: 15px;">
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" style="margin-bottom: 15px;">
+			    <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="course">Course of Interest:</label>
+            <select id="course" name="course" style="margin-bottom: 15px;">
+                <option value="">Select a course</option>
+                <option value="cs">Computer Science</option>
+                <option value="cyber">Cyber Security</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="se">Software Engineering</option>
+                <option value="mgmt">Management Sciences</option>
+            </select>
+            
+            <input type="submit" value="Submit" style="margin-bottom: 15px;">
+        </form>
+    </div>
+
+    <footer style="background-color: #003366; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2024 FAST University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
